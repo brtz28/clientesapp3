@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.clientes">
+    <!-- Para o leitor de código de barras -->
+    <uses-feature android:name="android.hardware.camera" /> <!-- Para o leitor de código de barras -->
+    <uses-permission android:name="android.permission.CAMERA" /> <!-- para acesso ao cartão sd -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/logo"
+        android:screenOrientation="portrait"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".activity.ProdutoAdminActivity"
+            android:label="Administracao de Produtos">
+        </activity>
+        <activity
+            android:name=".activity.PedidosActivity"
+            android:label="Pedidos">
+        </activity>
+        <activity
+            android:name=".activity.UsuarioAdminActivity"
+            android:label="Administracao de Usuarios">
+        </activity>
+        <activity
+            android:name=".activity.ProdutosActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".activity.ClienteAdminActivity"
+            android:label="Administracao de Clientes">
+        </activity>
+        <activity
+            android:name=".activity.SobreActivity"
+            android:label="Sobre" />
+        <activity
+            android:name=".activity.CarrinhoActivity"
+            android:label="Carrinho">
+        </activity>
+        <activity
+            android:name=".activity.ProdutoDetalheActivity"
+            android:label="Detalhes do Produto">
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:label="Tela de login - APP VENDAS">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.VIEW" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.ClientesActivity" />
+        <activity
+            android:name=".barcode.BarcodeCaptureActivity"
+            android:label="Leitor de Código" />
+    </application>
+
+</manifest>

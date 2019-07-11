@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.ClienteAdminActivity"
+    tools:layout_editor_absoluteY="81dp"
+    android:id="@+id/container_activity_cliente_admin">
+
+    <ImageView
+        android:id="@+id/imvFotoClienteTelaAdmin"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="@string/foto_do_produto"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/img_cliente_icon_524x524" />
+
+    <EditText
+        android:id="@+id/etNomeClienteTelaAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/hint_nome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCodigoDeBarras_clienteAdmin" />
+
+    <EditText
+        android:id="@+id/etSobrenomeClienteTelaAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/hint_sobrenome"
+        android:inputType="textPersonName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNomeClienteTelaAdmin" />
+
+    <EditText
+        android:id="@+id/etCPFClienteTelaAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:digits="0123456789.-"
+        android:ems="10"
+        android:hint="@string/hint_cpf"
+        android:inputType="numberSigned"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etSobrenomeClienteTelaAdmin" />
+
+    <Button
+        android:id="@+id/btSalvarClienteTelaAdmin"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:background="@color/colorAccent"
+        android:text="@string/bt_salvar"
+        android:textColor="@color/fontColor"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etCPFClienteTelaAdmin"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <TextView
+        android:id="@+id/tvCodigoDeBarrasClienteTelaAdmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etCodigoDeBarras_clienteAdmin"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:ems="10"
+        android:hint="@string/hint_codigo_de_barras"
+        android:inputType="numberSigned"
+        app:layout_constraintBottom_toTopOf="@+id/etNomeClienteTelaAdmin"
+        app:layout_constraintEnd_toStartOf="@+id/imbPesquisar_clienteAdmin"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imvFotoClienteTelaAdmin" />
+
+    <ImageButton
+        android:id="@+id/imbPesquisar_clienteAdmin"
+        android:layout_width="51dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:background="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="@+id/etCodigoDeBarras_clienteAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/etCodigoDeBarras_clienteAdmin"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_search_white_24dp" />
+
+    <ProgressBar
+        android:id="@+id/pb_foto_cliente_admin"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="@+id/imvFotoClienteTelaAdmin"
+        app:layout_constraintEnd_toEndOf="@+id/imvFotoClienteTelaAdmin"
+        app:layout_constraintStart_toStartOf="@+id/imvFotoClienteTelaAdmin"
+        app:layout_constraintTop_toTopOf="@+id/imvFotoClienteTelaAdmin" />
+
+    <Button
+        android:id="@+id/bt_verPedidos"
+        android:layout_width="142dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/colorPrimaryDark"
+        android:text="@string/bt_ver_pedidos"
+        android:textColor="@color/fontColor"
+        android:textSize="19sp"
+        app:layout_constraintBottom_toBottomOf="@+id/btSalvarClienteTelaAdmin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.746"
+        app:layout_constraintStart_toEndOf="@+id/btSalvarClienteTelaAdmin"
+        app:layout_constraintTop_toTopOf="@+id/btSalvarClienteTelaAdmin"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+
+</android.support.constraint.ConstraintLayout>

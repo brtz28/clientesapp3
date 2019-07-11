@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintEnd_toEndOf="@+id/tvIdadeCliente"
+            app:layout_constraintStart_toEndOf="@+id/tvIdadeCliente">
+
+            <TextView
+                android:id="@+id/tvEmailClienteAdapter"
+                android:layout_width="186dp"
+                android:layout_height="27dp"
+                android:layout_marginBottom="54dp"
+                android:text="@string/hint_email"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvIdadeCliente"
+                app:layout_constraintTop_toBottomOf="@+id/tvNomeClienteAdapter" />
+
+            <TextView
+                android:id="@+id/tvCPFClienteAdapter"
+                android:layout_width="190dp"
+                android:layout_height="29dp"
+                android:layout_marginBottom="120dp"
+                android:text="@string/hint_cpf"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/tvIdadeCliente"
+                app:layout_constraintTop_toBottomOf="@+id/tvNomeClienteAdapter" />
+
+            <TextView
+                android:id="@+id/tvNomeClienteAdapter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="153dp"
+                android:layout_marginRight="153dp"
+                android:layout_marginBottom="20dp"
+                android:text="@string/hint_nome"
+                app:layout_constraintBottom_toTopOf="@+id/tvEmailClienteAdapter"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/imvFotoClienteAdapter"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/imvFotoClienteAdapter"
+                android:layout_width="99dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="66dp"
+                android:layout_marginRight="66dp"
+                android:layout_marginBottom="8dp"
+                android:adjustViewBounds="false"
+                android:contentDescription="@string/content_description_foto_cliente"
+                android:cropToPadding="false"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/tvNomeClienteAdapter"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/img_cliente" />
+
+            <TextView
+                android:id="@+id/tvIdadeCliente"
+                android:layout_width="142dp"
+                android:layout_height="21dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:text="@string/hint_idade_cliente"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.557"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tvEmailClienteAdapter"
+                app:layout_constraintVertical_bias="0.962" />
+        </android.support.constraint.ConstraintLayout>
+    </android.support.v7.widget.CardView>
+</android.support.constraint.ConstraintLayout>

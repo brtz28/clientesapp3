@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.UsuarioAdminActivity">
+
+    <EditText
+        android:id="@+id/etNomeUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="19dp"
+        android:layout_marginRight="19dp"
+        android:ems="10"
+        android:hint="Nome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etSobrenomeUser"
+        android:layout_width="374dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etNomeUser"
+        android:layout_alignStart="@+id/etNomeUser"
+        android:layout_alignLeft="@+id/etNomeUser"
+        android:layout_alignEnd="@+id/etNomeUser"
+        android:layout_alignRight="@+id/etNomeUser"
+        android:layout_marginStart="-1dp"
+        android:layout_marginLeft="-1dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginRight="0dp"
+        android:ems="10"
+        android:hint="Sobrenome"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/etEmailUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spFuncaoUser"
+        android:layout_alignStart="@+id/etSobrenomeUser"
+        android:layout_alignLeft="@+id/etSobrenomeUser"
+        android:layout_alignEnd="@+id/etSobrenomeUser"
+        android:layout_alignRight="@+id/etSobrenomeUser"
+        android:layout_marginStart="3dp"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginRight="1dp"
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/etPasswordUser"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etEmailUser"
+        android:layout_alignStart="@+id/etEmailUser"
+        android:layout_alignLeft="@+id/etEmailUser"
+        android:layout_alignEnd="@+id/etEmailUser"
+        android:layout_alignRight="@+id/etEmailUser"
+        android:layout_marginStart="2dp"
+        android:layout_marginLeft="2dp"
+        android:layout_marginTop="21dp"
+        android:layout_marginEnd="2dp"
+        android:layout_marginRight="2dp"
+        android:ems="10"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <TextView
+        android:id="@+id/tv_funcao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etSobrenomeUser"
+        android:layout_alignStart="@+id/etSobrenomeUser"
+        android:layout_alignLeft="@+id/etSobrenomeUser"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="20dp"
+        android:text="Funcao" />
+
+    <Spinner
+        android:id="@+id/spFuncaoUser"
+        android:layout_width="373dp"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/tv_funcao"
+        android:layout_alignLeft="@+id/tv_funcao"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="165dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="20dp" />
+
+    <Button
+        android:id="@+id/btCadastrarUser"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etPasswordUser"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="21dp"
+        android:text="Cadastrar" />
+</RelativeLayout>

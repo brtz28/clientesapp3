@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item android:title="Vendas">
+            <menu>
+                <item
+                    android:id="@+id/nav_carrinho"
+                    android:icon="@drawable/ic_cart_2_48"
+                    android:title="Carrinho" />
+                <item
+                    android:id="@+id/nav_clientes"
+                    android:icon="@drawable/ic_group_48"
+                    android:title="Clientes" />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/admGroup"
+            android:title="Administração"
+            android:visible="false">
+            <menu>
+                <item
+                    android:id="@+id/nav_produto_adminstracao"
+                    android:icon="@drawable/ic_product_48"
+                    android:title="Produto" />
+                <item
+                    android:id="@+id/nav_cliente_administracao"
+                    android:icon="@drawable/ic_contacts_48"
+                    android:title="Cliente" />
+                <item
+                    android:id="@+id/nav_usuario_administracao"
+                    android:icon="@drawable/ic_contacts_48"
+                    android:title="Usuario" />
+            </menu>
+        </item>
+    </group>
+    <group android:checkableBehavior="single">
+        <item android:title="App">
+            <menu>
+                <item
+                    android:id="@+id/nav_sobre"
+                    android:icon="@drawable/ic_report_3_48"
+                    android:title="Sobre" />
+                <item
+                    android:id="@+id/nav_sair"
+                    android:icon="@drawable/ic_door_8_48"
+                    android:title="Sair" />
+            </menu>
+        </item>
+    </group>
+
+</menu>
